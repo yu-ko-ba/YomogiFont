@@ -24,6 +24,9 @@ exportFont.lib['com.github.googlei18n.ufo2ft.filters'] = [{
     "pre": 1,
 }]
 
+# Settings for making the monospaced-font
+exportFont.info.postscriptIsFixedPitch = True
+
 print ("[Yomogi] Compiling")
 static_ttf = ufo2ft.compileTTF(exportFont, removeOverlaps=True)
 
